@@ -1,0 +1,12 @@
+def find_missing_num(x):
+    numbers = set(x)
+    length = len(x)
+    output = []
+    for i in range(1, x[-1]):
+        if i not in numbers:
+            output.append(i)
+    return output
+
+
+numbers_list = [1, 2, 4, 6, 7, 8, 9, 10, 14, 15, 18]
+print(find_missing_num(numbers_list))
